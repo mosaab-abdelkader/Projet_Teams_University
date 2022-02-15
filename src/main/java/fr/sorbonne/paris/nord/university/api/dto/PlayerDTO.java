@@ -1,5 +1,6 @@
 package fr.sorbonne.paris.nord.university.api.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Data;
 import lombok.NonNull;
@@ -17,6 +18,7 @@ public class PlayerDTO {
     private String number;
     @Size(max=10)
     private String position;
-    @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     private TeamDTO teamdto;
 }

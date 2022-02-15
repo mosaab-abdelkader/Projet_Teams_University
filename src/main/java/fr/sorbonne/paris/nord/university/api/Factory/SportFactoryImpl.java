@@ -4,7 +4,9 @@ import fr.sorbonne.paris.nord.university.api.dto.SportDTO;
 import fr.sorbonne.paris.nord.university.api.dto.TeamDTO;
 import fr.sorbonne.paris.nord.university.api.entity.Sport;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class SportFactoryImpl implements SportFactory{
 
 

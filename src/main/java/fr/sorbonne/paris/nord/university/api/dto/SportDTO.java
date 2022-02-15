@@ -13,7 +13,7 @@ public class SportDTO {
     private long id;
     @NotEmpty
     private String name;
-    private List<TeamDTO> teamsDTO;
+    private List<TeamDTO> teams;
 
 
 

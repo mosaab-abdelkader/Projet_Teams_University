@@ -24,8 +24,8 @@ public class PlayerFactoryImp implements PlayerFactory{
         playerEntity.setName(dto.getName());
         playerEntity.setPosition(dto.getPosition());
         playerEntity.setNumber(dto.getNumber());
-        Team team = teamFactory.toTeam(dto.getTeamdto());
-        playerEntity.setTeam(team);
+       // Team team = teamFactory.toTeam(dto.getTeamdto());
+        //playerEntity.setTeam(team);
 
         return playerEntity;
     }
@@ -37,8 +37,8 @@ public class PlayerFactoryImp implements PlayerFactory{
         playerDTO.setName(entity.getName());
         playerDTO.setNumber(entity.getNumber());
         playerDTO.setPosition(entity.getPosition());
-        TeamDTO dto = teamFactory.toDTO(entity.getTeam());
-        playerDTO.setTeamdto(dto);
+        //TeamDTO dto = teamFactory.toDTO(entity.getTeam());
+       // playerDTO.setTeamdto(dto);
 
         return playerDTO;
     }

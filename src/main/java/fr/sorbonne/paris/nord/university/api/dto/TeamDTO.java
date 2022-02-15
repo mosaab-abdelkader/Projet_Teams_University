@@ -18,9 +18,12 @@ import java.util.List;
 		@NotEmpty
 		private String slogan;
 
-	    private List<PlayerDTO> palyers;
-		@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+		@JsonInclude(JsonInclude.Include.NON_NULL)
+	    private List<PlayerDTO> players;
+		@JsonInclude(JsonInclude.Include.NON_EMPTY)
 		private Sport sport;
+
+
 }
 
 
