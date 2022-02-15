@@ -18,6 +18,9 @@ public class Team {
     private String slogan;
     @OneToMany(mappedBy = "team",cascade = CascadeType.ALL)
     private List<Player> palyers;
+    @ManyToOne
+    @JoinColumn(name="sport_id",nullable = false)
+    private Sport sport;
 
 
 

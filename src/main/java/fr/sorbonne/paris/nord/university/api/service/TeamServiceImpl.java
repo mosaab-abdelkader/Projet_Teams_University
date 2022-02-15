@@ -63,7 +63,8 @@ public class TeamServiceImpl  implements TeamService{
     @Transactional
     @Override
     @Loggable
-    public void deleteTeamById(Long id) {
+    public void deleteTeamById(Long id)
+    {
         teamrepository.deleteById(id);
     }
 }
